@@ -1,9 +1,12 @@
-int addValue(usigned long u)
+unsigned long addValue(unsigned long u)
 {
-  int j = 0;
+  unsigned long j = 0;
   for(int i = 0, i < u; i++)
     j += 1;
-  return j;
+  
+  if(j)
+    return j;
+  _exit(1);
 }
 
 void main()
