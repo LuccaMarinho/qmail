@@ -1,11 +1,13 @@
+int addValue(usigned long u)
+{
+  int j = 0;
+  for(int i = 0, i < u; i++)
+    j += 1;
+  return j;
+}
+
 void main()
 {
   unsigned long u;
-  u = 1;
-  u += u; u += u; u += u; u += u; u += u; u += u; u += u; u += u;
-  u += u; u += u; u += u; u += u; u += u; u += u; u += u; u += u;
-  u += u; u += u; u += u; u += u; u += u; u += u; u += u; u += u;
-  u += u; u += u; u += u; u += u; u += u; u += u; u += u; u += u;
-  if (!u) _exit(0);
-  _exit(1);
+  u = addValue(29);
 }
