@@ -4,11 +4,14 @@ void byte_copy(to,n,from)
 register char *to;
 register unsigned int n;
 register char *from;
+
+// transformado em uma função para possibilitar testes
+void function(char* to, char* from)
 {
-  for (;;) {
-    if (!n) return; *to++ = *from++; --n;
-    if (!n) return; *to++ = *from++; --n;
-    if (!n) return; *to++ = *from++; --n;
-    if (!n) return; *to++ = *from++; --n;
+  //substitui o for e os if's por um while
+  while(n) 
+  {
+    *to++ = *from++; 
+    --n;
   }
 }
