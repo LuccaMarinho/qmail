@@ -4,7 +4,7 @@
 #include "exit.h"
 
 char host[256];
-
+//transformado em uma função 
 void gethostname(char host[], int size)
 {
  for(int i = 0; i < size; i++)
